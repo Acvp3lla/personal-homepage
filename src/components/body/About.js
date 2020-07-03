@@ -1,8 +1,11 @@
 import React from 'react'
+import Styled from '../StyledComponents/Styled'
 
 function About(){
     return(
-        <h1>About</h1>
+        <Styled>
+            <h1>About</h1>
+        </Styled>
     )
 }
 

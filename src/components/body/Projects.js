@@ -1,8 +1,11 @@
 import React from 'react'
+import Styled from '../StyledComponents/Styled'
 
 function Projects(){
     return(
-        <h1>Projects</h1>
+        <Styled>
+            <h1>Projects</h1>
+        </Styled>
     )
 }
 

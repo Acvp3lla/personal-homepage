@@ -1,8 +1,11 @@
 import React from 'react'
+import Styled from '../StyledComponents/Styled'
 
 function Contact(){
     return(
-        <h1>Contact</h1>
+        <Styled>
+            <h1>Contact</h1>
+        </Styled>
     )
 }
 

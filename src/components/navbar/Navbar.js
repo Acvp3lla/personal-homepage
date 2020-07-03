@@ -1,11 +1,7 @@
 import React from 'react'
-import {BrowserRouter as Router, Switch, Link, Route} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import './Navbar.css'
-import Home from '../body/Home'
-import About from '../body/About'
-import Skills from '../body/Skills'
-import Projects from '../body/Projects'
-import Contact from '../body/Contact'
+
 
 function Navbar(){
     return(

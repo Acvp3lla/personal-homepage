@@ -1,8 +1,13 @@
 import React from 'react'
+import StyledHome from '../StyledComponents/StyledHome'
 
 function Home(){
     return(
-        <h1>Home</h1>
+        <StyledHome>
+            <div>
+                <h1>Welcome Banner</h1>
+            </div>
+        </StyledHome>
     )
 }
 
