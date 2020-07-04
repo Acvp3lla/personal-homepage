@@ -8,6 +8,8 @@ import Projects from './components/body/Projects'
 import Contact from './components/body/Contact'
 import Footer from './components/footer/Footer'
 import './App.css';
+import './hover.css'
+import ParticlesBg from 'particles-bg'
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
       <div className={'content'}>
         <Switch>
           <Route exact path='/'>
-            <Home/>
+            <Home />
           </Route>
           <Route path='/about'>
             <About/>
@@ -35,7 +37,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-      
+      <ParticlesBg type="polygon" bg={true}/>
       <Footer/>
     </div>
   );

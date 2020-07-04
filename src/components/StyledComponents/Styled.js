@@ -3,7 +3,7 @@ import './Styled.css'
 
 function Styled(props){
     return(
-        <div className='cont'>
+        <div className='cont hvr-grow-shadow'>
             {props.children}
         </div>
     )

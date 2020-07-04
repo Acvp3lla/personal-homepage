@@ -5,7 +5,7 @@ function Footer(){
     
     return(
         <footer className='container'>
-            <p>Touched by Acvp3lla. © 2020</p>
+            <p className='hvr-float-shadow'>Touched by <a href='https://www.instagram.com/acvp3lla/' target="_blank">Acvp3lla.</a> © 2020</p>
         </footer>
     )
 }
