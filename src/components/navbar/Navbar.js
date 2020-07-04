@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import './Navbar.css'
 
 
-function Navbar(){
+function Navbar(props){
     return(
         <nav className='navbar'>
                 <ul>
@@ -11,7 +11,7 @@ function Navbar(){
                         <Link className='link' to='/'>Home</Link>
                     </li>
                     <li className='hvr-float-shadow'>
-                        <Link className='link' to='/about'>About</Link>
+                        <Link className='link' to='/profile' >Profile</Link>
                     </li>
                     <li className='hvr-float-shadow'>
                         <Link className='link' to='/skills'>Skills</Link>

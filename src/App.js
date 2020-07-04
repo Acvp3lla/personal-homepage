@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from './components/navbar/Navbar.js'
 import {Switch, Route} from 'react-router-dom'
 import Home from './components/body/Home'
-import About from './components/body/About'
+import Profile from './components/body/Profile'
 import Skills from './components/body/Skills'
 import Projects from './components/body/Projects'
 import Contact from './components/body/Contact'
@@ -11,20 +11,22 @@ import './App.css';
 import './hover.css'
 import ParticlesBg from 'particles-bg'
 
-function App() {
+
+function App(props) {
+
   return (
     <div className="App">
       <div>
-        <Navbar />
+        <Navbar/>
       </div>
 
       <div className={'content'}>
-        <Switch>
+        <Switch>      
           <Route exact path='/'>
-            <Home />
+              <Home />
           </Route>
-          <Route path='/about'>
-            <About/>
+          <Route path='/profile'>
+            <Profile />
           </Route>
           <Route path='/skills'>
             <Skills/>
@@ -37,6 +39,7 @@ function App() {
           </Route>
         </Switch>
       </div>
+
       <ParticlesBg type="polygon" bg={true}/>
       <Footer/>
     </div>
