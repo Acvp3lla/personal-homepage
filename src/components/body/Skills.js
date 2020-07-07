@@ -24,7 +24,7 @@ function Skills() {
   };
 
   const divStyle = {
-    marginBottom: "200px",
+    marginBottom: "165px",
   };
 
   return (
