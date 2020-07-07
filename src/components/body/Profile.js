@@ -39,14 +39,16 @@ function Profile(){
                         position: 'relative',
                         top: '40px',
                         float: 'left',
-                        left: '100px',
-                        fontSize: '18px'
+                        left: '70px',
+                        fontSize: '25px',
+                        textAlign: 'justify',
+                        fontWeight: '600'
                     }}
                     className='hvr-grow'
                 >
                     <h1 style={{margin:0}}>Luciano Gordon</h1>
-                    <h2 style={{margin:0}}>Software Developer</h2>
-                    <h2 style={{margin:0}}>UI/UX Designer</h2>
+                    <h3 style={{margin:0}}>Software Developer</h3>
+                    <h3 style={{margin:0}}>UI/UX Designer</h3>
                 </div>
 
                 <div

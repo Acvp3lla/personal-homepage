@@ -4,7 +4,10 @@ import Styled from '../StyledComponents/Styled'
 function Projects(){
     return(
         <Styled>
-            <h1>Projects</h1>
+            <div>
+                <h1>Projects</h1>
+                <h3>...Coming Soon...</h3>
+            </div>
         </Styled>
     )
 }
