@@ -40,7 +40,7 @@ function App(props) {
         </Switch>
       </div>
 
-      <ParticlesBg type="polygon" bg={true}/>
+      <ParticlesBg color={'random'} type="polygon" bg={true}/>
       <Footer/>
     </div>
   );
