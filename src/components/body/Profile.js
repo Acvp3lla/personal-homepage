@@ -18,21 +18,18 @@ function Profile() {
     const pararaph = (
         <RoughNotationGroup show={show}>
             <p onMouseOver={onHover}>
-                I am a past student of the <RoughNotation type="highlight" color="yellow" order='1'> University of the West Indies</RoughNotation> pursuing a{" "}
-                <br />
-      Bachelor’ s Degree in <RoughNotation type="highlight" color="yellow" order='2'> Computer Science</RoughNotation>. My interests are in the
-      fields of
+                I am a past student of the <RoughNotation type="highlight" color="yellow" order='1'> University of the West Indies</RoughNotation> with a{" "} <br />
+                Bachelor’ s Degree in <RoughNotation type="highlight" color="yellow" order='2'> Computer Science</RoughNotation>. My interests are in the fields of
       <br />
                 <RoughNotation type="highlight" color="yellow" order='2'> Software Development</RoughNotation>,{" "}
                 <RoughNotation type="highlight" color="yellow" order='3'> Computer Networking</RoughNotation> and{" "}
                 <RoughNotation type="highlight" color="yellow" order='4'>Web Development</RoughNotation>. <br />
-      I am a{" "}
+                I am a{" "}
                 <RoughNotation type="highlight" color="yellow" order='5'>creative</RoughNotation> and{" "}
                 <RoughNotation type="highlight" color="yellow" order='6'>driven individual</RoughNotation> and a{" "}
-                <RoughNotation type="highlight" color="yellow" order='7'>proactive problem solver</RoughNotation>.{" "}
-                
-                <br /> My goal is to become a{" "}
-                <RoughNotation type="box" color="red" order='8' animationDuration={2000}> major contributor</RoughNotation> to my field of study.{" "}
+                <RoughNotation type="highlight" color="yellow" order='7'>proactive problem solver</RoughNotation>.{" "}                             
+                <br /> My goal is to{" "}
+                <RoughNotation type="box" color="red" order='8' animationDuration={2000}> never stop learning</RoughNotation> to improve my skills.{" "}
             </p>
         </RoughNotationGroup>
     );
