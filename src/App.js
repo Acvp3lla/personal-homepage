@@ -9,7 +9,7 @@ import Contact from './components/body/Contact'
 import Footer from './components/footer/Footer'
 import './App.css';
 import './hover.css'
-import ParticlesBg from 'particles-bg'
+// import ParticlesBg from 'particles-bg'
 
 
 function App(props) {
@@ -40,7 +40,7 @@ function App(props) {
         </Switch>
       </div>
 
-      <ParticlesBg color={'random'} type="polygon" bg={true}/>
+      {/* <ParticlesBg color={'random'} type="polygon" bg={true}/> */}
       <Footer/>
     </div>
   );
