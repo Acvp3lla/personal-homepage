@@ -1,39 +1,28 @@
 nav{
-  display: flex;
-  align-items: center;
-  background: #34495E;
-  width: 100%;
-  height: 4rem;
+  background: black;
+  width: 6vw;
+  height: 35vh;
   color: white;
-}
-
-nav ul{
-  display: flex;
-  align-items: center;
-  margin-top: 0;
-  padding-left: 10px;
-}
-
-nav ul li{
-  margin-left: 20px;
-  list-style: none;
+  border-radius: 20px;
 }
 
 .link{
   color: white;
-}
-
-li{
+  font-size: medium;
   text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
 }
 
-header{
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
+#link{
+  color: white;
+  text-decoration: none;
+}
+
+#link:active {
+  color: #CEFF00;
+}
+
+#link:hover {
+  color: #CEFF00;
 }
 
 .hvr-float-shadow {

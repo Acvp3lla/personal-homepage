@@ -1,0 +1,24 @@
+.overview{
+    font-size:27px;
+    font-weight: 300;
+}
+
+.underview{
+    font-size:23px;
+    font-weight: 300;
+}
+
+.toptier{
+    font-size:28px;
+    font-weight: 600;
+}
+
+.secondtier{
+    font-size:20px;
+    font-weight: 400;
+}
+
+.thirdtier{
+    font-size:16px;
+    font-weight: 400;
+}

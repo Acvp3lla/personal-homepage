@@ -5,8 +5,8 @@ import "./Project.css";
 
 function Projects() {
   const style = {
-    width: "200px",
-    height: "200px",
+    width: "400px",
+    height: "400px",
     position: "relative",
     top: "20px",
     float: "left",
@@ -22,17 +22,11 @@ function Projects() {
   return (
     <Styled>
       <div>
-        <h1
-          className="hvr-buzz"
-          style={{
-            fontSize: "40px",
-            fontWeight: "800",
-          }}
-        >
-          Projects
-        </h1>
-        <div style={divStyle}>
-          <img style={style} className="loading" src={loading} alt="loading" />
+        <h1 className="hvr-buzz mt-4 mb-3" style={{ fontSize: "40px", fontWeight: "800", }}>Projects</h1>
+        <div style={divStyle} className="mt-4 mb-5 d-flex align-items-center">
+          <div className="row">
+            <img style={style} className="loading" src={loading} alt="loading" />
+          </div>
         </div>
         <h3 className="hvr-buzz">...Coming Soon...</h3>
       </div>

@@ -1,17 +1,29 @@
-.container{
-    position: fixed;
+.footer{
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #34495E;
+    background-color: #1A1A1D;
     color: white;
     text-align: center;
-    height: 30px;
+    height: 5vh;
 }
 
 a{
-
     text-decoration: none;
     color: white;
+}
+
+#link{
+    color: white;
+    text-decoration: none;
+}
+  
+#link:active {
+    color: #CEFF00;
+}
+
+#link:hover {
+    color: #CEFF00;
 }
 

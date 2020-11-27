@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import Styled from "../StyledComponents/Styled";
+import StyledHome from "../StyledComponents/Styled";
 import Photo from "./images/profile-photo.jpg";
 import "./Profile.css";
+import data from '../../profile.json';
+import { AiFillGithub, AiFillTwitterCircle } from "react-icons/ai";
 import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
 function Profile() {
@@ -15,124 +17,115 @@ function Profile() {
         setShow(prevVal => false)
     }
 
-    const pararaph = (
-        <RoughNotationGroup show={show}>
-            <p onMouseOver={onHover}>
-                I am a past student of the <RoughNotation type="highlight" color="yellow" order='1'> University of the West Indies</RoughNotation> with a{" "} <br />
-                Bachelor’ s Degree in <RoughNotation type="highlight" color="yellow" order='2'> Computer Science</RoughNotation>. My interests are in the fields of
-      <br />
-                <RoughNotation type="highlight" color="yellow" order='2'> Software Development</RoughNotation>,{" "}
-                <RoughNotation type="highlight" color="yellow" order='3'> Computer Networking</RoughNotation> and{" "}
-                <RoughNotation type="highlight" color="yellow" order='4'>Web Development</RoughNotation>. <br />
-                I am a{" "}
-                <RoughNotation type="highlight" color="yellow" order='5'>creative</RoughNotation> and{" "}
-                <RoughNotation type="highlight" color="yellow" order='6'>driven individual</RoughNotation> and a{" "}
-                <RoughNotation type="highlight" color="yellow" order='7'>proactive problem solver</RoughNotation>.{" "}                             
-                <br /> My goal is to{" "}
-                <RoughNotation type="box" color="red" order='8' animationDuration={2000}> never stop learning</RoughNotation> to improve my skills.{" "}
-            </p>
-        </RoughNotationGroup>
-    );
+    const imageStyle={
+        width: "340px",
+        height: "340px",
+        borderRadius: "50%",
+        marginLeft: "auto",
+        marginRight: "auto",
+        textAlign: "center",
+    }
 
-    const education = (
-        <RoughNotationGroup show={show}>
-            <p
-                style={{
-                    margin: 0,
-                }}
-            >
-                <RoughNotation type="underline" color="red" order='7' animationDelay={3000} animationDuration={2000}>Munro College, 2015</RoughNotation>{" "}-{" "}
-                <RoughNotation type="underline" color="red" order='7' animationDelay={2000}>High School Diploma</RoughNotation><br />
-                <RoughNotation type="underline" color="red" order='8' animationDelay={2000}>The University of the West Indies, 2020</RoughNotation>{" "}-{" "}
-                <RoughNotation type="underline" color="red" order='8' animationDelay={2000}>Computer Science B.Sc</RoughNotation>.{" "}
-            </p>
-        </RoughNotationGroup>
-    );
+    // const pararaph = (
+    //     <RoughNotationGroup show={show}>
+    //         <p onMouseOver={onHover}>
+    //             I am a past student of the <RoughNotation type="highlight" color="yellow" order='1'> University of the West Indies</RoughNotation> with a{" "} <br />
+    //             Bachelor’ s Degree in <RoughNotation type="highlight" color="yellow" order='2'> Computer Science</RoughNotation>. My interests are in the fields of
+    //   <br />
+    //             <RoughNotation type="highlight" color="yellow" order='2'> Software Development</RoughNotation>,{" "}
+    //             <RoughNotation type="highlight" color="yellow" order='3'> Computer Networking</RoughNotation> and{" "}
+    //             <RoughNotation type="highlight" color="yellow" order='4'>Web Development</RoughNotation>. <br />
+    //             I am a{" "}
+    //             <RoughNotation type="highlight" color="yellow" order='5'>creative</RoughNotation> and{" "}
+    //             <RoughNotation type="highlight" color="yellow" order='6'>driven individual</RoughNotation> and a{" "}
+    //             <RoughNotation type="highlight" color="yellow" order='7'>proactive problem solver</RoughNotation>.{" "}                             
+    //             <br /> My goal is to{" "}
+    //             <RoughNotation type="box" color="red" order='8' animationDuration={2000}> never stop learning</RoughNotation> to improve my skills.{" "}
+    //         </p>
+    //     </RoughNotationGroup>
+    // );
 
     return (
-        <Styled onHover={onHover} onLeave={onLeave}>
-            <div>
-                <img
-                    style={{
-                        width: "200px",
-                        height: "200px",
-                        borderRadius: "40px",
-                        position: "relative",
-                        top: "20px",
-                        float: "left",
-                        left: "20px",
-                        padding: 0,
-                        margin: 0,
-                    }}
-                    className="hvr-grow-shadow"
-                    src={Photo}
-                    alt="profile-img"
-                />
-                <div
-                    style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        position: "relative",
-                        top: "40px",
-                        float: "left",
-                        left: "70px",
-                        fontSize: "25px",
-                        textAlign: "justify",
-                        fontWeight: "600",
-                    }}
-                    className="hvr-grow"
-                >
-                    <h1
-                        style={{
-                            margin: 0,
-                        }}
-                    >
-                        {" "}
-            Luciano Gordon{" "}
-                    </h1>{" "}
-                    <h3
-                        style={{
-                            margin: 0,
-                        }}
-                    >
-                        {" "}
-            Software Developer{" "}
-                    </h3>{" "}
-                    <h3
-                        style={{
-                            margin: 0,
-                        }}
-                    >
-                        {" "}
-            UI / UX Designer{" "}
-                    </h3>{" "}
+        <StyledHome onHover={onHover} onLeave={onLeave}>
+            <div className="mt-4 mb-3">
+            <h1 className="hvr-buzz" style={{fontSize: "40px",fontWeight: "800",}}>Profile</h1>
+            </div>
+            <div className='row ml-4 mr-4 d-flex align-items-center'>
+            
+                <div className="col-8 d-flex align-items-center flex-column">
+                    <div>
+                        <h3 className='mb-2' style={{fontWeight: "700",}}>About Me</h3>
+                    </div>
+                    {/* <div className='col'></div> */}
+                    {/* <RoughNotationGroup show={show}> */}
+                    <div className='pt-2'>
+                        <p className='overview'>
+                            {/* <RoughNotation type="highlight" color="yellow" order='1'> */}
+                                {data.profile.overview.p1}
+                            {/* </RoughNotation> */}
+                        </p>
+                        <p className='overview'>{data.profile.overview.p2}</p>
+                    </div>
+                    {/* </RoughNotationGroup> */}
+                    <div>
+                        <h3 className='mb-2' style={{fontWeight: "700",}}>Education</h3>
+                    </div>
+                    <RoughNotationGroup show={show}>
+                        <div className='col'>
+                            <div className='row pt-2'>
+                                <p className='underview blocktxt'>
+                                <RoughNotation type="underline" color="red" order='7' animationDelay={3000} animationDuration={2000}>
+                                    {data.education.highSchool} - {data.education.highSchoolInfo}
+                                </RoughNotation>
+                                </p>
+                                <p className='underview blocktxt'>
+                                    <RoughNotation type="underline" color="red" order='7' animationDelay={2000} animationDuration={2000}>
+                                        {data.education.college} - {data.education.collegeMajor}, {data.education.collegeMinor}
+                                    </RoughNotation>
+                                </p>
+                            </div>
+                        </div>
+                    </RoughNotationGroup>
                 </div>
-                <div
-                    style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        position: "relative",
-                        top: "40px",
-                        float: "left",
-                        left: "20px",
-                        fontSize: "20px",
-                        textAlign: "justify",
-                        fontWeight: "600",
-                    }}
-                >
-                    {pararaph}{" "}
-                    <h4
-                        style={{
-                            marginTop: "10px",
-                            marginBottom: "4px",
-                        }}
-                    >
-            Education:
-                    </h4>
-                    {education}
+
+                <div className="col-4 mt-5">
+                    <div className="container">
+                        <div className="row">
+                            <img style={imageStyle} className="hvr-grow-shadow" src={Photo} alt="profile-img"/>
+                        </div>
+                        <div className="col">
+                            <div className="row mt-2">
+                                <h1 className="blocktxt toptier">{data.profile.name}</h1>
+                            </div>
+                            <div className="row">
+                                <h1 className="blocktxt secondtier">{data.profile.role1}, {data.profile.role2}</h1>
+                            </div>
+                            <div className="row">
+                                <h1 className="blocktxt thirdtier">{data.profile.location}</h1>
+                            </div>
+                            {/* <div className="row">
+                                <h1 className="blocktxt thirdtier"></h1>
+                            </div> */}
+                            <div className="row d-flex justify-content-center">
+                                {/* <button className="btn btn-primary d-flex align-items-center"> Twitter</button> */}
+                                <div className="btn btn-primary d-flex align-items-center">
+                                    <a className="d-flex align-items-center" id="twitter-btn" href="https://twitter.com/acvp3lla?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">
+                                        <AiFillTwitterCircle className="icon-style mr-1"/>Twitter
+                                    </a>
+                                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </div>
+                                
+                                <div className="btn btn-dark ml-3 d-flex align-items-center">
+                                    <a className='d-flex align-items-center' id='link' href='https://github.com/Acvp3lla' target="_blank" rel='noopener noreferrer'>
+                                        <AiFillGithub className="icon-style mr-1"/>Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </Styled>
+        </StyledHome>
     );
 }
 

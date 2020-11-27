@@ -1,73 +1,84 @@
 import React from "react";
 import Styled from "../StyledComponents/Styled";
-import html from "./icons/html.png";
-import css from "./icons/css.png";
-import javascript from "./icons/javascript.png";
-import react from "./icons/react-logo.png";
-import sql from "./icons/sql.png";
-import photoshop from "./icons/photoshop.png";
-import illustrator from "./icons/adobe-illustrator.png";
-import adobeXD from "./icons/adobe-xd.png";
-import angular from "./icons/angular.png";
-import python from "./icons/python.png";
+import html from "./icons/black/html.png";
+import css from "./icons/black/css.png";
+import javascript from "./icons/black/javascript.png";
+import react from "./icons/black/react-logo.png";
+import sql from "./icons/black/sql.png";
+import photoshop from "./icons/black/photoshop.png";
+// import illustrator from "./icons/adobe-illustrator.png";
+import adobeXD from "./icons/black/adobe-xd.png";
+import angular from "./icons/black/angular.png";
+import python from "./icons/black/python.png";
+import dart from "./icons/black/dart.png";
+import flutter from "./icons/black/flutter.png";
+import node from './icons/black/nodejs.png';
+import Tooltip from '@material-ui/core/Tooltip';
 
 function Skills() {
   const style = {
-    width: "100px",
-    height: "100px",
+    width: "120px",
+    height: "120px",
     position: "relative",
     top: "20px",
     float: "left",
-    left: "20px",
     padding: 0,
     margin: "1rem",
   };
 
-  const divStyle = {
-    marginBottom: "165px",
-  };
+  
 
   return (
     <Styled>
       <div>
-        <h1
-          className="hvr-buzz"
-          style={{
-            fontSize: "40px",
-            fontWeight: "800",
-          }}
-        >
-          Skills
-        </h1>
-        <div style={divStyle}>
-          <img className="hvr-buzz" style={style} src={html} alt="html" />
-          <img className="hvr-buzz" style={style} src={css} alt="css" />
-          <img
-            className="hvr-buzz"
-            style={style}
-            src={javascript}
-            alt="javascript"
-          />
-          <img className="hvr-buzz" style={style} src={react} alt="react" />
-          <img className="hvr-buzz" style={style} src={angular} alt="angular" />
-        </div>
-        <div style={divStyle}>
-          <img className="hvr-buzz" style={style} src={sql} alt="sql" />
-          <img
-            className="hvr-buzz"
-            style={style}
-            src={photoshop}
-            alt="photoshop"
-          />
-          <img
-            className="hvr-buzz"
-            style={style}
-            src={illustrator}
-            alt="illustrator"
-          />
-          <img className="hvr-buzz" style={style} src={adobeXD} alt="adobeXD" />
-          <img className="hvr-buzz" style={style} src={python} alt="python" />
-        </div>
+        <h1 className="hvr-buzz mt-4 mb-3" style={{fontSize: "40px",fontWeight: "800",}}> Skills </h1>
+
+        <div className="cotainer d-flex justify-content-center flex-row">
+          <div className="col">
+            <div className="row mt-4 d-flex justify-content-around">
+              <Tooltip title="JavaScript">
+                <img className="hvr-buzz" style={style} src={javascript} alt="javascript"/>
+              </Tooltip>
+              <Tooltip title="Python">
+                <img className="hvr-buzz" style={style} src={python} alt="python" />
+              </Tooltip>
+              <Tooltip title="HTML">
+                <img className="hvr-buzz" style={style} src={html} alt="html" />
+              </Tooltip>
+              <Tooltip title="CSS">
+                <img className="hvr-buzz" style={style} src={css} alt="css" />
+              </Tooltip>
+            </div>
+            <div className="row mt-4 d-flex justify-content-around">
+              <Tooltip title="Dart">
+                <img className="hvr-buzz" style={style} src={dart} alt="dart"/>
+              </Tooltip>
+              <Tooltip title="React">
+                <img className="hvr-buzz" style={style} src={react} alt="react"/>
+              </Tooltip>
+              <Tooltip title="Angular">
+                <img className="hvr-buzz" style={style} src={angular} alt="angular"/>
+              </Tooltip>
+              <Tooltip title="Flutter">
+                <img className="hvr-buzz" style={style} src={flutter} alt="flutter"/>
+              </Tooltip>
+            </div>
+            <div className="row mt-4 d-flex justify-content-around">
+              <Tooltip title="NodeJs">
+                <img className="hvr-buzz" style={style} src={node} alt="node"/>
+              </Tooltip>
+              <Tooltip title="SQL">
+                <img className="hvr-buzz" style={style} src={sql} alt="sql" />
+              </Tooltip>
+              <Tooltip title="Photoshop">
+                <img className="hvr-buzz" style={style} src={photoshop} alt="photoshop"/>
+              </Tooltip>
+              <Tooltip title="AdobeXD">
+                <img className="hvr-buzz" style={style} src={adobeXD} alt="adobeXD" />
+              </Tooltip>
+            </div>
+          </div>
+          </div>
       </div>
     </Styled>
   );

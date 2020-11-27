@@ -1,9 +1,9 @@
 .cont{
     display: flex;
     position: relative;
-    top: 150px;
-    width: 700px;
-    height: 500px;
+    /* justify-content: center; */
+    width: 70vw;
+    height: 80vh;
     border-radius: 40px;
     background-color: rgba(226,241, 175, 0.4);
 }

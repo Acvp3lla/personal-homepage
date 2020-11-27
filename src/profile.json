@@ -1,0 +1,54 @@
+{
+	"profile":{
+		"name": "Luciano Gordon",
+		"role1": "Software Developer",
+		"role2": "UI/UX Designer",
+		"location": "Kingston, Jamaica",
+		"overview": {
+			"p1": "I am an Alumnus of the University of the West Indies. Presently, I am a Junior Software Developer at Speur Professional Services. I am a naturally curious person, a driven individual and a proactive problem solver.",
+			"p2": "According to the great Albert Einstein,\"Life is like riding a bicycle. To keep your balance, you must keep moving\". As such my ultimate goal is to continue working on my skills and never stop learning."
+		}
+	},
+	"contact":{
+		"email": "lucianogordon@hotmail.com",
+		"github": "https://github.com/acvp3lla",
+		"linkedIn": "https://www.linkedin.com/in/lucianogordon",
+		"facebook": "https://www.facebook.com/Acvp3lla/",
+		"instagram":"https://www.instagram.com/acvp3lla/",
+		"twitter": "https://twitter.com/acvp3lla"
+	},
+	"education":{
+		"highSchool": "Munro College, 2015",
+		"highSchoolInfo": "High School Diploma",
+		"highSchoolGeneral": ["Mathematics", "Information Technology", "Physics", "Chemistry", "Technical Drawing", "English Language", "Biology", "Auto Mechanics"],
+		"highSchoolSixthForm":["Computer Science", "Information Technology", "Pure Mathematics", "Chemistry", "Communication Studies", "Caribbean Studies"],
+		"college": "The University of the West Indies, 2020",
+		"collegeMajor": "Computer Science (Major)",
+		"collegeMinor": "Econimics (Minor)"
+	},
+	"skills": {
+		"languages":["JavaScript","Python","Dart", "HTML", "CSS", "SQL"],
+		"frameworks": ["ReactJS", "Angular", "NodeJs", "Flutter"],
+		"tools": ["Photoshop", "AdobeXD", "Illustrator"]
+	},
+	"hobbies": ["Reading", "Fitness", "Music", "Cooking", "Video Games"],
+	"experience":{
+		"xp1": {
+			"company": "eGov Jamaica Ltd.",
+			"role": "Programmer - Intern",
+			"start": "2020-06-30",
+			"end": "2020-08-31",
+			"details": {
+				"dt1": "Frontend Developer - Angular",
+				"dt2": "Backend Developer - NodeJS",
+				"dt3": "UI/UX Design - AdobeXD"
+			}
+		},
+		"xp2": {
+			"company": "Speur Professional Services",
+			"role": "Junior Software Developer",
+			"start": "2020-11-07",
+			"end": "Present"
+		}
+	}
+}

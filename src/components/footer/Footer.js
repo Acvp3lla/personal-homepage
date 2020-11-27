@@ -6,8 +6,8 @@ function Footer(){
     console.log(year)
     
     return(
-        <footer className='container'>
-            <p className='hvr-float-shadow' >Touched by <a href='https://www.instagram.com/acvp3lla/' target="_blank" rel='noopener noreferrer'>Acvp3lla.</a> © {year}</p>
+        <footer className='footer'>
+            <p className=' mt-2 hvr-float-shadow' >Touched by <a id='link' href='https://www.instagram.com/acvp3lla/' target="_blank" rel='noopener noreferrer'>Acvp3lla.</a> © {year}</p>
         </footer>
     )
 }
