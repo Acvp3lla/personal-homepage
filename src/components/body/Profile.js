@@ -18,8 +18,10 @@ function Profile() {
     }
 
     const imageStyle={
-        width: "340px",
-        height: "340px",
+        // width: "340px",
+        // height: "340px",
+        maxWidth: "85%",
+        maxHeight: "85%",
         borderRadius: "50%",
         marginLeft: "auto",
         marginRight: "auto",
@@ -91,7 +93,7 @@ function Profile() {
                 <div className="col-4 mt-5">
                     <div className="container">
                         <div className="row">
-                            <img style={imageStyle} className="hvr-grow-shadow" src={Photo} alt="profile-img"/>
+                            <img id='profile-img' style={imageStyle} className="hvr-grow-shadow" src={Photo} alt="profile-img"/>
                         </div>
                         <div className="col">
                             <div className="row mt-2">
