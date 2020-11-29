@@ -22,7 +22,7 @@ function Contact(){
     return(
         <Styled>
             <div>
-                <h1 className="hvr-buzz mt-4 mb-3" style={{ fontSize: "40px", fontWeight: "800", }}>Contact</h1>
+                <h1 className="hvr-float-shadow mt-4 mb-3" style={{ fontSize: "40px", fontWeight: "800", }}>Contact</h1>
 
                 <div className="cotainer d-flex justify-content-center flex-row mt-5">
                     <div className="col">

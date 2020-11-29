@@ -13,6 +13,11 @@
     font-weight: 600;
 }
 
+.uppersecondtier{
+    font-size:24px;
+    font-weight: 400;
+}
+
 .secondtier{
     font-size:20px;
     font-weight: 400;
@@ -20,5 +25,26 @@
 
 .thirdtier{
     font-size:16px;
+    font-weight: 400;
+}
+
+
+.head1{
+    font-size:32px;
+    font-weight: 600;
+}
+
+.head2{
+    font-size:28px;
+    font-weight: 400;
+}
+
+.head3{
+    font-size:24px;
+    font-weight: 400;
+}
+
+.head4{
+    font-size:20px;
     font-weight: 400;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import Styled from "../StyledComponents/Styled";
-import loading from "./icons/loading.png";
+import loading from "./icons/black/loading.png";
 import "./Project.css";
 
 function Projects() {
@@ -22,7 +22,7 @@ function Projects() {
   return (
     <Styled>
       <div>
-        <h1 className="hvr-buzz mt-4 mb-3" style={{ fontSize: "40px", fontWeight: "800", }}>Projects</h1>
+        <h1 className="hvr-float-shadow mt-4 mb-3" style={{ fontSize: "40px", fontWeight: "800", }}>Projects</h1>
         <div style={divStyle} className="mt-4 mb-5 d-flex align-items-center">
           <div className="row">
             <img style={style} className="loading" src={loading} alt="loading" />

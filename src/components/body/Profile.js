@@ -48,13 +48,13 @@ function Profile() {
     return (
         <StyledHome onHover={onHover} onLeave={onLeave}>
             <div className="mt-4 mb-3">
-            <h1 className="hvr-buzz" style={{fontSize: "40px",fontWeight: "800",}}>Profile</h1>
+            <h1 className="hvr-float-shadow" style={{fontSize: "40px",fontWeight: "800",}}>Profile</h1>
             </div>
             <div className='row ml-4 mr-4 d-flex align-items-center'>
             
                 <div className="col-8 d-flex align-items-center flex-column">
                     <div>
-                        <h3 className='mb-2' style={{fontWeight: "700",}}>About Me</h3>
+                        <h3 className='mb-2 hvr-float-shadow' style={{fontWeight: "700",}}>About Me</h3>
                     </div>
                     {/* <div className='col'></div> */}
                     {/* <RoughNotationGroup show={show}> */}
@@ -68,7 +68,7 @@ function Profile() {
                     </div>
                     {/* </RoughNotationGroup> */}
                     <div>
-                        <h3 className='mb-2' style={{fontWeight: "700",}}>Education</h3>
+                        <h3 className='mb-2 hvr-float-shadow' style={{fontWeight: "700",}}>Education</h3>
                     </div>
                     <RoughNotationGroup show={show}>
                         <div className='col'>

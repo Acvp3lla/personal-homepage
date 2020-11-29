@@ -17,13 +17,16 @@ nav{
   text-decoration: none;
 }
 
+#link:hover,
+#link:hover,
+#link.active,
 #link:active {
   color: #CEFF00;
 }
 
-#link:hover {
+/* #link:hover {
   color: #CEFF00;
-}
+} */
 
 .hvr-float-shadow {
   display: inline-block;

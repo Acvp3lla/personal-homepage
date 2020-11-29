@@ -7,7 +7,7 @@ import Profile from './components/body/Profile';
 import Skills from './components/body/Skills';
 import Projects from './components/body/Projects';
 import Contact from './components/body/Contact';
-// import Education from './components/body/Education';
+import Experience from './components/body/Experience';
 import Footer from './components/footer/Footer';
 // import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import ScrollToBottom from './components/Scroll/ScrollToBottom';
@@ -35,9 +35,9 @@ function App(props) {
                   <Route path='/profile'>
                     <Profile />
                   </Route>
-                  {/* <Route path='/education'>
-                    <Education/>
-                  </Route> */}
+                  <Route path='/experience'>
+                    <Experience/>
+                  </Route>
                   <Route path='/skills'>
                     <Skills/>
                   </Route>

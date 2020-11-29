@@ -35,9 +35,10 @@
 	"experience":{
 		"xp1": {
 			"company": "eGov Jamaica Ltd.",
-			"role": "Programmer - Intern",
-			"start": "2020-06-30",
-			"end": "2020-08-31",
+			"role": "Programmer Intern",
+			"location": "Kingston, Jamaica",
+			"start": "June 2020",
+			"end": "August 2020",
 			"details": {
 				"dt1": "Frontend Developer - Angular",
 				"dt2": "Backend Developer - NodeJS",
@@ -45,9 +46,10 @@
 			}
 		},
 		"xp2": {
-			"company": "Speur Professional Services",
+			"company": "Speur Professional Services LLC.",
 			"role": "Junior Software Developer",
-			"start": "2020-11-07",
+			"location": "Kingston, Jamaica",
+			"start": "November 2020",
 			"end": "Present"
 		}
 	}
