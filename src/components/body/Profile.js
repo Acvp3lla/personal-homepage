@@ -50,7 +50,7 @@ function Profile() {
             <div className="mt-3 mb-2">
             <h1 id="profile-page-header" className="hvr-float-shadow" style={{fontWeight: "800",}}>Profile</h1>
             </div>
-            <div id='profile-content' className='row mr-2 d-flex align-items-center'>
+            <div id='profile-content' className='row ml-1 mr-1 d-flex align-items-center'>
                 {/* Profile personal */}
                 <div id='profile-part1' className="col">
                     <div id='personal-contained' className="container">
