@@ -31,9 +31,9 @@ function Skills() {
   return (
     <Styled>
       <div>
-        <h1 className="hvr-float-shadow mt-4 mb-3" style={{fontSize: "40px",fontWeight: "800",}}> Skills </h1>
+        <h1 id='skills-header' className="hvr-float-shadow mt-3 mb-2" style={{fontWeight: "800",}}> Skills </h1>
 
-        <div className="cotainer d-flex justify-content-center flex-row">
+        <div className="cotainer d-flex justify-content-center flex-row flex-wrap">
           <div className="col">
             <div className="row mt-4 d-flex justify-content-around">
               <Tooltip title="JavaScript">

@@ -5,11 +5,10 @@ import "./Project.css";
 
 function Projects() {
   const style = {
-    width: "400px",
-    height: "400px",
+    width: "120px",
+    height: "120px",
     position: "relative",
     top: "20px",
-    float: "left",
     padding: 0,
     margin: "1rem",
   };
@@ -21,15 +20,15 @@ function Projects() {
 
   return (
     <Styled>
-      <div>
-        <h1 className="hvr-float-shadow mt-4 mb-3" style={{ fontSize: "40px", fontWeight: "800", }}>Projects</h1>
-        <div style={divStyle} className="mt-4 mb-5 d-flex align-items-center">
-          <div className="row">
-            <img style={style} className="loading" src={loading} alt="loading" />
+        <h1 id='projects-header' className="hvr-float-shadow mt-3 mb-2" style={{fontWeight: "800", }}>Projects</h1>
+        {/* <div className='pt5'> */}
+          <div style={divStyle} className="mt-4 mb-5">
+            <div className="row">
+              <img style={style} className="loading mt-5" src={loading} alt="loading" />
+            </div>
           </div>
-        </div>
-        <h3 className="hvr-buzz">...Coming Soon...</h3>
-      </div>
+        <h3 id='projects-message' className="hvr-buzz mt-2 pt-5">...Coming Soon...</h3>
+        {/* </div> */}
     </Styled>
   );
 }

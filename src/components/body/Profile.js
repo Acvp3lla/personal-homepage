@@ -47,82 +47,79 @@ function Profile() {
 
     return (
         <StyledHome onHover={onHover} onLeave={onLeave}>
-            <div className="mt-4 mb-3">
-            <h1 className="hvr-float-shadow" style={{fontSize: "40px",fontWeight: "800",}}>Profile</h1>
+            <div className="mt-3 mb-2">
+            <h1 id="profile-page-header" className="hvr-float-shadow" style={{fontWeight: "800",}}>Profile</h1>
             </div>
-            <div className='row ml-4 mr-4 d-flex align-items-center'>
-            
-                <div className="col-8 d-flex align-items-center flex-column">
-                    <div>
-                        <h3 className='mb-2 hvr-float-shadow' style={{fontWeight: "700",}}>About Me</h3>
-                    </div>
-                    {/* <div className='col'></div> */}
-                    {/* <RoughNotationGroup show={show}> */}
-                    <div className='pt-2'>
-                        <p className='overview'>
-                            {/* <RoughNotation type="highlight" color="yellow" order='1'> */}
-                                {data.profile.overview.p1}
-                            {/* </RoughNotation> */}
-                        </p>
-                        <p className='overview'>{data.profile.overview.p2}</p>
-                    </div>
-                    {/* </RoughNotationGroup> */}
-                    <div>
-                        <h3 className='mb-2 hvr-float-shadow' style={{fontWeight: "700",}}>Education</h3>
-                    </div>
-                    <RoughNotationGroup show={show}>
-                        <div className='col'>
-                            <div className='row pt-2'>
-                                <p className='underview blocktxt'>
-                                <RoughNotation type="underline" color="red" order='7' animationDelay={3000} animationDuration={2000}>
-                                    {data.education.highSchool} - {data.education.highSchoolInfo}
-                                </RoughNotation>
-                                </p>
-                                <p className='underview blocktxt'>
-                                    <RoughNotation type="underline" color="red" order='7' animationDelay={2000} animationDuration={2000}>
-                                        {data.education.college} - {data.education.collegeMajor}, {data.education.collegeMinor}
-                                    </RoughNotation>
-                                </p>
-                            </div>
-                        </div>
-                    </RoughNotationGroup>
-                </div>
-
-                <div className="col-4 mt-5">
-                    <div className="container">
+            <div id='profile-content' className='row mr-2 d-flex align-items-center'>
+                {/* Profile personal */}
+                <div id='profile-part1' className="col">
+                    <div id='personal-contained' className="container">
                         <div className="row">
                             <img id='profile-img' style={imageStyle} className="hvr-grow-shadow" src={Photo} alt="profile-img"/>
                         </div>
                         <div className="col">
                             <div className="row mt-2">
-                                <h1 className="blocktxt toptier">{data.profile.name}</h1>
+                                <h1 id='name' className="blocktxt toptier">{data.profile.name}</h1>
                             </div>
                             <div className="row">
-                                <h1 className="blocktxt secondtier">{data.profile.role1}, {data.profile.role2}</h1>
+                                <h1 id='roles' className="blocktxt secondtier">{data.profile.role1}, {data.profile.role2}</h1>
                             </div>
                             <div className="row">
-                                <h1 className="blocktxt thirdtier">{data.profile.location}</h1>
+                                <h1 id='location' className="blocktxt thirdtier">{data.profile.location}</h1>
                             </div>
-                            {/* <div className="row">
-                                <h1 className="blocktxt thirdtier"></h1>
-                            </div> */}
-                            <div className="row d-flex justify-content-center">
-                                {/* <button className="btn btn-primary d-flex align-items-center"> Twitter</button> */}
-                                <div className="btn btn-primary d-flex align-items-center">
-                                    <a className="d-flex align-items-center" id="twitter-btn" href="https://twitter.com/acvp3lla?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">
-                                        <AiFillTwitterCircle className="icon-style mr-1"/>Twitter
-                                    </a>
+                            <div id="profile-btns" className="row d-flex justify-content-center">
+                                <div id="link-btns" className="btn btn-primary d-flex align-items-center mr-1">
+                                    <a className="d-flex align-items-center" id="link" href="https://twitter.com/acvp3lla?ref_src=twsrc%5Etfw" data-show-count="false">
+                                            <AiFillTwitterCircle className="icon-style mr-1 ml-1"/> Twitter
+                                        </a>
                                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                                 </div>
                                 
-                                <div className="btn btn-dark ml-3 d-flex align-items-center">
+                                <div id="link-btns" className="btn btn-dark d-flex align-items-center ml-1">
                                     <a className='d-flex align-items-center' id='link' href='https://github.com/Acvp3lla' target="_blank" rel='noopener noreferrer'>
-                                        <AiFillGithub className="icon-style mr-1"/>Github
+                                        <AiFillGithub className="icon-style mr-1 ml-1"/>Github
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+        
+                {/* Profile details */}
+                <div id='profile-part2' className="col mt-2 d-flex align-items-center flex-column d-flex">
+                    <div>
+                        <h3 id="about-me" className='mb-1 hvr-float-shadow' style={{fontWeight: "700",}}>About Me</h3>
+                    </div>
+                    {/* <div className='col'></div> */}
+                    {/* <RoughNotationGroup show={show}> */}
+                    <div className='pt-1'>
+                        <p id='about-me-par1' className='overview'>
+                            {/* <RoughNotation type="highlight" color="yellow" order='1'> */}
+                                {data.profile.overview.p1}
+                            {/* </RoughNotation> */}
+                        </p>
+                        <p id='about-me-par2' className='overview'>{data.profile.overview.p2}</p>
+                    </div>
+                    {/* </RoughNotationGroup> */}
+                    <div>
+                        <h3 id='education' className='mb-1 hvr-float-shadow' style={{fontWeight: "700",}}>Education</h3>
+                    </div>
+                    <RoughNotationGroup show={show}>
+                        <div className='col'>
+                            <div className='row pt-1'>
+                                <h1 id='highSchool' className='underview blocktxt'>
+                                <RoughNotation type="underline" color="red" order='7' animationDelay={3000} animationDuration={2000}>
+                                    {data.education.highSchool} - {data.education.highSchoolInfo}
+                                </RoughNotation>
+                                </h1>
+                                <h1 id='college' className='underview blocktxt'>
+                                    <RoughNotation type="underline" color="red" order='7' animationDelay={2000} animationDuration={2000}>
+                                        {data.education.college} - {data.education.collegeMajor}, {data.education.collegeMinor}
+                                    </RoughNotation>
+                                </h1>
+                            </div>
+                        </div>
+                    </RoughNotationGroup>
                 </div>
             </div>
         </StyledHome>

@@ -18,7 +18,7 @@ function ScrollToBottom(){
     }
 
     if(visible){
-        return false;
+        // Adjust visibility
     }
 
     return(

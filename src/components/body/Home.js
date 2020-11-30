@@ -96,8 +96,8 @@ function Home(props){
             <div className="container d-flex justify-content-center align-items-center">
                 <div className="row">
                     <StyledHome>
-                        <h1 className="hvr-float-shadow" style={{fontSize: "40px",fontWeight: "800",}}>{data.profile.name}</h1>
-                        <h4 className="hvr-buzz" style={{fontWeight: "500",}}>Interactive Resume</h4>
+                        <h1 id="home-h1" className="hvr-float-shadow" style={{fontWeight: "800",}}>{data.profile.name}</h1>
+                        <h4 id="home-h4" className="hvr-buzz" style={{fontWeight: "500",}}>Interactive Resume</h4>
                     </StyledHome>
                 </div>
                 <div className="row d-flex justify-content-center">

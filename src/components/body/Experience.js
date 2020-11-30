@@ -7,8 +7,8 @@ import "./Profile.css";
 function Experience() {
     return(
         <Styled>
-            <div className="mt-4 mb-3">
-                <h1 className="hvr-float-shadow" style={{fontSize: "40px",fontWeight: "800",}}>Experience</h1>
+            <div className="mt-3 mb-5">
+                <h1 id="xp-header" className="hvr-float-shadow" style={{fontWeight: "800",}}>Experience</h1>
             </div>
             <div id='xp-cont' className="container mt-5 d-flex justify-content-center flex-column">
                 <div className="col d-flex justify-content-center flex-column">

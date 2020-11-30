@@ -18,7 +18,8 @@ function ScrollToTop(){
     }
 
     if(visible){
-        return false;
+        // return false;
+        // Adjust visibility
     }
 
     return(

@@ -29,7 +29,6 @@ function App(props) {
               <div className='content'>
                 <Switch>
                   <Route exact path='/'>
-                    {/* <Home /> */}
                     <Profile />
                   </Route>
                   <Route path='/profile'>
