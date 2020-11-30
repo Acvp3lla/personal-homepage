@@ -5,12 +5,16 @@ import instagram from "./icons/black/instagram.png";
 import outlook from "./icons/black/outlook.png";
 import facebook from "./icons/black/facebook.png";
 import twitter from "./icons/black/twitter.png";
+// import Tooltip from '@material-ui/core/Tooltip';
+
 
 
 function Contact(){
     const style = {
         width: "100px",
         height: "100px",
+        // maxWidth: "10%",
+        // maxHeight: "10%",
         position: "relative",
         top: "20px",
         float: "left",
@@ -26,7 +30,24 @@ function Contact(){
 
                 <div className="cotainer d-flex justify-content-center flex-row mt-5">
                     <div className="col">
-                        <div className="row d-flex justify-content-around d-flex">
+                        {/* <div className="row mt-4 d-flex justify-content-around">
+                            <Tooltip title="JavaScript">
+                                <img className="hvr-buzz" style={style} src={outlook} alt="javascript"/>
+                            </Tooltip>
+                            <Tooltip title="Python">
+                                <img className="hvr-buzz" style={style} src={linkedIn} alt="python" />
+                            </Tooltip>
+                            <Tooltip title="HTML">
+                                <img className="hvr-buzz" style={style} src={facebook} alt="html" />
+                            </Tooltip>
+                            <Tooltip title="CSS">
+                                <img className="hvr-buzz" style={style} src={instagram} alt="css" />
+                            </Tooltip>
+                            <Tooltip title="CSS">
+                                <img className="hvr-buzz" style={style} src={twitter} alt="css" />
+                            </Tooltip>
+                        </div> */}
+                        <div className="row d-flex justify-content-around flex-row">
                             <a style={{color: 'black'}} href="mailto:lucianogordon@hotmail.com" rel='noopener noreferrer'>
                                 <img className="hvr-buzz" style={style} src={outlook} alt="outlook"/>
                             </a>

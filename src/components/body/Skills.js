@@ -17,8 +17,8 @@ import Tooltip from '@material-ui/core/Tooltip';
 
 function Skills() {
   const style = {
-    width: "120px",
-    height: "120px",
+    maxWidth: "10%",
+    maxHeight: "10%",
     position: "relative",
     top: "20px",
     float: "left",

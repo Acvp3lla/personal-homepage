@@ -18,8 +18,6 @@ function Profile() {
     }
 
     const imageStyle={
-        // width: "340px",
-        // height: "340px",
         maxWidth: "85%",
         maxHeight: "85%",
         borderRadius: "50%",
