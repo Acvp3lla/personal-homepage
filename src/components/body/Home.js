@@ -2,8 +2,19 @@ import React from 'react';
 import StyledHome from '../StyledComponents/StyledHome';
 import data from '../../profile.json';
 import Particles from 'react-particles-js';
+import logo from './icons/lg-logo.png';
 
 function Home(props){
+    const style = {
+        maxWidth: "15%",
+        maxHeight: "15%",
+        position: "relative",
+        top: "20px",
+        float: "left",
+        padding: 0,
+        margin: "1rem",
+    };
+
     return(
         <>
         <div className='container-fluid d-flex justify-content-center align-items-center pt-5'>
@@ -96,6 +107,7 @@ function Home(props){
             <div className="container d-flex justify-content-center align-items-center">
                 <div className="row">
                     <StyledHome>
+                        <img className="hvr-buzz" style={style} src={logo} alt="javascript"/>
                         <h1 id="home-h1" className="hvr-float-shadow" style={{fontWeight: "800",}}>{data.profile.name}</h1>
                         <h4 id="home-h4" className="hvr-buzz" style={{fontWeight: "500",}}>Interactive Resume</h4>
                     </StyledHome>

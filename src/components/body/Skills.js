@@ -26,8 +26,6 @@ function Skills() {
     margin: "1rem",
   };
 
-  
-
   return (
     <Styled>
       <div>
