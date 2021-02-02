@@ -16,16 +16,6 @@ import node from './icons/black/nodejs.png';
 import Tooltip from '@material-ui/core/Tooltip';
 
 function Skills() {
-  const style = {
-    maxWidth: "10%",
-    maxHeight: "10%",
-    position: "relative",
-    top: "20px",
-    float: "left",
-    padding: 0,
-    margin: "1rem",
-  };
-
   return (
     <Styled>
       <div>

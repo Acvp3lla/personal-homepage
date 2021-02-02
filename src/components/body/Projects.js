@@ -4,15 +4,6 @@ import loading from "./icons/black/loading.png";
 import "./Project.css";
 
 function Projects() {
-  const style = {
-    width: "120px",
-    height: "120px",
-    position: "relative",
-    top: "20px",
-    padding: 0,
-    margin: "1rem",
-  };
-
   const divStyle = {
     display: "flex",
     justifyContent: "center"

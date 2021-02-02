@@ -9,16 +9,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 
 
 
-function Contact(){
-    const style = {
-        maxWidth: "70%",
-        maxHeight: "70%",
-        position: "relative",
-        // top: "20px",
-        // left: "20px",
-        padding: 0,
-      };
-    
+function Contact(){    
     return(
         <Styled>
             <div>
