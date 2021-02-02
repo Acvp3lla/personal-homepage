@@ -11,6 +11,7 @@
     "animate.css": "^4.1.0",
     "bootstrap": "^4.5.3",
     "hover.css": "^2.3.2",
+    "node-sass": "^4.14.1",
     "particles-bg": "^2.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -18,7 +19,7 @@
     "react-particles-js": "^3.4.1",
     "react-rough-notation": "^0.1.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^4.0.1",
     "react-transition-group": "^4.4.1",
     "react-use": "^15.3.4",
     "rough-notation": "^0.4.0"

@@ -6,6 +6,10 @@ nav{
   border-radius: 20px;
 }
 
+p{
+  margin: 4px 0;
+}
+
 .link{
   color: white;
   font-size: medium;

@@ -88,7 +88,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -115,6 +115,25 @@ a:hover {
   top:0;
   width:100%;
   height:100%;
+}
+
+#img-style{
+  width: 10%;
+  height: 10%;
+  position: relative;
+  top: 20px;
+  float: left;
+  padding: 0;
+  margin: 1rem;
+}
+
+#contact-img-style{
+  width: 12%;
+  height: 12%;
+  position: relative;
+  top: 150px;
+  padding-top: 20px;
+  margin: 2rem;
 }
 
 @keyframes App-logo-spin {
@@ -255,496 +274,572 @@ a:hover {
   width: 70%;
 }
 
-@media only screen and (max-width: 1500px){
+@media screen and (max-width: 1024px){ 
   /* Home */
   #home-h1{
-    font-size: 40px;
+    font-size: 2.5em;
   }
   #home-h4{
-    font-size: 28px;
+    font-size: 1.5em;
   }
   /* Footer */
   #footer-txt{
-    font-size: x-small;
+    font-size: small;
   }
   /* Profile Header */
-  /* #profile-page-header{
-    font-size: 32px;
-  } */
+  #profile-head{
+    padding-bottom: 30px;
+  }
+  #profile-page-header{
+    font-size: 2.5em;
+    font-weight: bold;
+  }
   /* Overview */
-  /* #about-me{
-    font-size: 24px;
-  } */
+  .profile-page-header{
+    margin-bottom: 70px;
+  }
+  #about-me{
+    font-size: 1.5em;
+    font-weight: bold;
+  }
   #about-me-par1,
   #about-me-par2{
-    font-size:22px;
+    font-size: 1.25em;
+    font-weight: 600;
+    padding: 0 20px;
   }
-  /* #education{
-    font-size: 20px;
-  } */
+  #education{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 20px;
+  }
   #highSchool, 
   #college{
-    font-size: 22px;
+    font-size: 1.25em;
+    font-weight: 600;
   }
   /* Personal */
   #profile-img{
-    width: 85%;
+    width: 50%;
+    padding-bottom: 20px;
   }
   #name, 
   #roles,
   #location{
-    font-size: 20px;
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+  #location{
+    padding-bottom: 10px;
   }
   /* Profile Buttons */
   #link-btns{
     display: flex;
     align-items: center;
     /* height: 20px; */
-    font-size: 16px;
+    font-size: .8em;
     padding: 0;
-    width: 95px; 
+    width: 100px; 
   }
   .icon-style{
     height: 20px;
     width: 20px;
   }
-  /* #profile-content{
+  #profile-part1{
+    padding-bottom: 30px;
+  }
+  #profile-content{
     display: flex;
     flex-direction: column;
-  } */
+  }
   #link{
-    font-size: 18px;
+    font-size: 1.5em;
+    font-weight: bold;
   }
   nav{
-    width: 8vw;
-    height: 40vh;
-    color: white;
-    border-radius: 20px;
-  }
-  #scroll-btn{
-    height: 50px;
-    width: 30px;
-  }
-  .scroll-up{
-    left: 40%;
-  }
-  /* Skills */
-  /* #skills-header{
-    font-size: 24px;
-  } */
-  /* Experience */
-  /* #xp-header{
-    font-size: 24px;
-  }
-  .head1{
-    font-size: 20px;
-  }
-  .head2{
-    font-size: 18px;
-  }
-  .head3{
-    font-size: 16px;
-  }
-  .head4{
-    font-size: 14px;
-  } */
-  /* Projects Page */
-  /* #projects-header{
-    font-size: 24px;
-  } */
-  /* #projects-message{
-    font-size: 20px;
-  } */
-  /* Contact */
-  /* #contact-header{
-    font-size: 24px;
-  } */
-}
-
-@media only screen and (max-width: 1200px){
-  /* Home */
-  #home-h1{
-    font-size: 32px;
-  }
-  #home-h4{
-    font-size: 24px;
-  }
-  /* Footer */
-  #footer-txt{
-    font-size: x-small;
-  }
-  /* Profile Header */
-  #profile-page-header{
-    font-size: 28px;
-  }
-  /* Overview */
-  #about-me{
-    font-size: 17px;
-  }
-  #about-me-par1,
-  #about-me-par2{
-    font-size:16px;
-  }
-  #education{
-    font-size: 17px;
-  }
-  #highSchool, 
-  #college{
-    font-size: 16px;
-  }
-  /* Personal */
-  #profile-img{
-    width: 90%;
-  }
-  #name, 
-  #roles,
-  #location{
-    font-size: 15px;
-  }
-  /* Profile Buttons */
-  #link-btns{
-    display: flex;
-    align-items: center;
-    /* height: 20px; */
-    font-size: 12px;
-    padding: 0;
-    width: 72px; 
-  }
-  .icon-style{
-    height: 14px;
-    width: 14px;
-  }
-  /* #profile-content{
-    display: flex;
-    flex-direction: column;
-  } */
-  #link{
-    font-size: 14px;
-  }
-  nav{
-    width: 14vw;
-    height: 50vh;
+    width: 15vw;
+    height: 30vh;
     color: white;
     border-radius: 10px;
   }
   #scroll-btn{
-    height: 30px;
-    width: 20px;
+    height: 60px;
+    width: 40px;
   }
   .scroll-up{
-    left: 35%;
+    left: 30%;
   }
   /* Skills */
   #skills-header{
-    font-size: 24px;
+    font-size: 2.5em;
+    font-weight: bold;
   }
-  /* Experience */
-  #xp-header{
-    font-size: 24px;
+  #img-style{
+    width: 18% !important;
+    height: 18% !important;
   }
-  .head1{
-    font-size: 20px;
+  #img-row{
+    padding: 40px 0;
   }
-  .head2{
-    font-size: 18px;
-  }
-  .head3{
-    font-size: 16px;
-  }
-  .head4{
-    font-size: 14px;
-  }
-  /* Projects Page */
-  #projects-header{
-    font-size: 24px;
-  }
-  #projects-message{
-    font-size: 20px;
-  }
-  /* Contact */
-  #contact-header{
-    font-size: 24px;
-  }
-}
-
-@media only screen and (max-width: 992px){
-
-  /* Home */
-  #home-h1{
-    font-size: 28px;
-  }
-  #home-h4{
-    font-size: 20px;
-  }
-  /* Footer */
-  #footer-txt{
-    font-size: x-small;
-  }
-  /* Profile Header */
-  #profile-page-header{
-    font-size: 24px;
-  }
-  /* Overview */
-  #about-me{
-    font-size: 15px;
-  }
-  #about-me-par1,
-  #about-me-par2{
-    font-size:13px;
-  }
-  #education{
-    font-size: 15px;
-  }
-  #highSchool, 
-  #college{
-    font-size: 13px;
-  }
-  /* Personal */
-  #profile-img{
-    width: 70%;
-  }
-  #name, 
-  #roles,
-  #location{
-    font-size: 11px;
-  }
-  /* Profile Buttons */
-  #link-btns{
-    display: flex;
+  /* #img-container{
+    justify-content: center;
     align-items: center;
-    /* height: 20px; */
-    font-size: 7px;
-    padding: 0;
-    width: 50px; 
-  }
-  .icon-style{
-    height: 10px;
-    width: 10px;
-  }
-  /* #profile-content{
-    display: flex;
-    flex-direction: column;
   } */
-  #link{
-    font-size: 10px;
-  }
-  nav{
-    width: 14vw;
-    height: 44vh;
-    color: white;
-    border-radius: 10px;
-  }
-  #scroll-btn{
-    height: 30px;
-    width: 20px;
-  }
-  .scroll-up{
-    left: 35%;
-  }
-  /* Skills */
-  #skills-header{
-    font-size: 24px;
-  }
-  /* Experience */
   #xp-header{
-    font-size: 24px;
+    font-size: 2.5em;
+    font-weight: bold;
   }
   .head1{
-    font-size: 20px;
+    font-size: 2em;
+    font-weight: 600;
   }
   .head2{
-    font-size: 18px;
+    font-size: 1.9em;
+    font-weight: 600;
   }
   .head3{
-    font-size: 16px;
+    font-size: 1.7em;
+    font-weight: 600;
   }
   .head4{
-    font-size: 14px;
+    font-size: 1.6em;
+    font-weight: 600;
+  }
+  #xp-cont{
+    padding-top: 200px;
   }
   /* Projects Page */
   #projects-header{
-    font-size: 24px;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  #loading-img-style{
+    width: 350px;
+    height: 350px;
   }
   #projects-message{
-    font-size: 20px;
+    font-size: 2em;
+    font-weight: 600;
+  }
+  #img-container{
+    padding-top: 100px;
   }
   /* Contact */
   #contact-header{
-    font-size: 24px;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  #contact-img-style{
+    width: 23%;
+    height: 23%;
+    top: 150px;
+    padding-top: 20px;
   }
 }
 
 @media only screen and (max-width: 768px){
   /* Home */
   #home-h1{
-    font-size: 24px;
+    font-size: 2.5em;
   }
   #home-h4{
-    font-size: 16px;
+    font-size: 1.5em;
   }
   /* Footer */
   #footer-txt{
-    font-size: x-small;
+    font-size: small;
   }
   /* Profile Header */
+  #profile-head{
+    padding-bottom: 10px;
+  }
   #profile-page-header{
-    font-size: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
   }
   /* Overview */
+  .profile-page-header{
+    margin-bottom: 70px;
+  }
   #about-me{
-    font-size: 11px;
+    font-size: 1.3em;
+    font-weight: bold;
   }
   #about-me-par1,
   #about-me-par2{
-    font-size:10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 0 20px;
   }
   #education{
-    font-size: 11px;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 20px;
   }
   #highSchool, 
   #college{
-    font-size: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
   }
   /* Personal */
   #profile-img{
     width: 40%;
+    padding-bottom: 5px;
   }
   #name, 
   #roles,
   #location{
-    font-size: 9px;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  #location{
+    padding-bottom: 10px;
   }
   /* Profile Buttons */
   #link-btns{
     display: flex;
     align-items: center;
     /* height: 20px; */
-    font-size: 5px;
+    font-size: .6em;
     padding: 0;
-    width: 50px; 
+    width: 80px; 
   }
   .icon-style{
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
+  }
+  #profile-part1{
+    padding-bottom: 10px;
   }
   #profile-content{
     display: flex;
     flex-direction: column;
   }
   #link{
-    font-size: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
   }
   nav{
-    width: 14vw;
-    height: 44vh;
+    width: 18vw;
+    height: 35vh;
     color: white;
     border-radius: 10px;
   }
   #scroll-btn{
-    height: 30px;
-    width: 20px;
+    height: 60px;
+    width: 40px;
   }
   .scroll-up{
-    left: 35%;
+    left: 20%;
   }
   /* Skills */
   #skills-header{
-    font-size: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
   }
-  /* Experience */
+  #img-style{
+    width: 18% !important;
+    height: 18% !important;
+  }
+  #img-row{
+    padding: 0;
+  }
   #xp-header{
-    font-size: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
   }
   .head1{
-    font-size: 15px;
+    font-size: 1.6em;
+    font-weight: 600;
   }
   .head2{
-    font-size: 14px;
+    font-size: 1.4em;
+    font-weight: 600;
   }
   .head3{
-    font-size: 12px;
+    font-size: 1.2em;
+    font-weight: 600;
   }
   .head4{
-    font-size: 11px;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  #xp-cont{
+    padding-top: 100px;
   }
   /* Projects Page */
   #projects-header{
-    font-size: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  #loading-img-style{
+    width: 250px;
+    height: 250px;
   }
   #projects-message{
-    font-size: 15px;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  #img-container{
+    padding-top: 50px;
   }
   /* Contact */
   #contact-header{
-    font-size: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  #contact-img-style{
+    width: 20%;
+    height: 20%;
   }
 }
 
-@media only screen and (max-width: 600px) { 
+@media only screen and (max-width: 540px){
   /* Home */
   #home-h1{
-    font-size: 24px;
+    font-size: 2em;
   }
   #home-h4{
-    font-size: 16px;
+    font-size: 1.2em;
   }
   /* Footer */
   #footer-txt{
-    font-size: x-small;
+    font-size: .6em;
   }
   /* Profile Header */
+  #profile-head{
+    padding-bottom: 0px;
+  }
   #profile-page-header{
-    font-size: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
   }
   /* Overview */
+  .profile-page-header{
+    margin-bottom: 70px;
+  }
   #about-me{
-    font-size: 10px;
+    font-size: .9em;
+    font-weight: bold;
   }
   #about-me-par1,
   #about-me-par2{
-    font-size: 9px;
+    font-size: .7em;
+    font-weight: 600;
+    padding: 0 20px;
   }
   #education{
-    font-size: 10px;
+    font-size: .9em;
+    font-weight: bold;
+    padding-top: 20px;
   }
   #highSchool, 
   #college{
-    font-size: 9px;
+    font-size: .7em;
+    font-weight: 600;
   }
   /* Personal */
   #profile-img{
-    width: 50%;
+    width: 40%;
+    padding-bottom: 0px;
   }
   #name, 
   #roles,
   #location{
-    font-size: 7px;
+    font-size: .8em;
+    font-weight: 600;
+  }
+  #location{
+    padding-bottom: 5px;
   }
   /* Profile Buttons */
   #link-btns{
     display: flex;
     align-items: center;
     /* height: 20px; */
-    font-size: 5px;
+    font-size: .6em;
     padding: 0;
-    width: 50px; 
+    width: 70px; 
   }
   .icon-style{
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
+  }
+  #profile-part1{
+    padding-bottom: 5px;
   }
   #profile-content{
     display: flex;
     flex-direction: column;
   }
   #link{
-    font-size: 8px;
+    font-size: 1em;
+    font-weight: bold;
   }
   nav{
-    width: 14vw;
-    height: 44vh;
+    width: 18vw;
+    height: 40vh;
     color: white;
-    border-radius: 10px;
+    border-radius: 12px;
+  }
+  #scroll-btn{
+    height: 40px;
+    width: 30px;
+  }
+  .scroll-up{
+    left: 20%;
+  }
+  /* Skills */
+  #skills-header{
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  #img-style{
+    width: 16% !important;
+    height: 16% !important;
+  }
+  #img-row{
+    padding: 0;
+  }
+  #xp-header{
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .head1{
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  .head2{
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  .head3{
+    font-size: 1.05em;
+    font-weight: 600;
+  }
+  .head4{
+    font-size: 1em;
+    font-weight: 600;
+  }
+  #xp-cont{
+    padding-top: 20px;
+  }
+  /* Projects Page */
+  #projects-header{
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  #loading-img-style{
+    width: 200px;
+    height: 200px;
+  }
+  #projects-message{
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  #img-container{
+    padding-top: 0px;
+  }
+  /* Contact */
+  #contact-header{
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  #contact-img-style{
+    width: 22%;
+    height: 22%;
+    top: 50px;
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 414px){
+  /* Home */
+  #home-h1{
+    font-size: 1.5em;
+  }
+  #home-h4{
+    font-size: 1em;
+  }
+  /* Footer */
+  #footer-txt{
+    font-size: .6em;
+  }
+  /* Profile Header */
+  #profile-head{
+    padding-bottom: 0px;
+  }
+  #profile-page-header{
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  /* Overview */
+  .profile-page-header{
+    margin-bottom: 70px;
+  }
+  #about-me{
+    font-size: .8em;
+    font-weight: bold;
+  }
+  #about-me-par1,
+  #about-me-par2{
+    font-size: .7em;
+    font-weight: 600;
+    padding: 0 20px;
+  }
+  #education{
+    font-size: .8em;
+    font-weight: bold;
+    padding-top: 0px;
+  }
+  #highSchool, 
+  #college{
+    font-size: .7em;
+    font-weight: 600;
+  }
+  /* Personal */
+  #profile-img{
+    width: 50%;
+    padding-bottom: 0px;
+  }
+  #name, 
+  #roles,
+  #location{
+    font-size: .65em;
+    font-weight: 600;
+  }
+  #location{
+    padding-bottom: 0px;
+  }
+  /* Profile Buttons */
+  #link-btns{
+    display: flex;
+    align-items: center;
+    /* height: 20px; */
+    font-size: .6em;
+    padding: 0;
+    width: 55px; 
+  }
+  .icon-style{
+    height: 15px;
+    width: 15px;
+  }
+  #profile-part1{
+    padding-bottom: 0px;
+  }
+  #profile-content{
+    display: flex;
+    flex-direction: column;
+  }
+  #link{
+    font-size: .8em;
+    font-weight: bold;
+  }
+  nav{
+    width: 18vw;
+    height: 35vh;
+    color: white;
+    border-radius: 12px;
   }
   #scroll-btn{
     height: 30px;
@@ -755,149 +850,710 @@ a:hover {
   }
   /* Skills */
   #skills-header{
-    font-size: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  #img-style{
+    width: 13% !important;
+    height: 13% !important;
+  }
+  #img-row{
+    padding-top: 20px;
   }
   #xp-header{
-    font-size: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
   }
   .head1{
-    font-size: 13px;
+    font-size: 1em;
+    font-weight: 600;
   }
   .head2{
-    font-size: 12px;
+    font-size: .95em;
+    font-weight: 600;
   }
   .head3{
-    font-size: 10px;
+    font-size: .9em;
+    font-weight: 600;
   }
   .head4{
-    font-size: 9px;
+    font-size: .89em;
+    font-weight: 600;
+  }
+  #xp-cont{
+    padding-top: 20px;
   }
   /* Projects Page */
   #projects-header{
-    font-size: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  #loading-img-style{
+    width: 200px;
+    height: 200px;
   }
   #projects-message{
-    font-size: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  #img-container{
+    padding-top: 50px;
   }
   /* Contact */
   #contact-header{
-    font-size: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  #contact-img-style{
+    width: 25%;
+    height: 25%;
+    top: 50px;
+    padding-top: 0px;
   }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 720px) { 
+@media only screen and (max-width: 375px){
   /* Home */
   #home-h1{
-    font-size: 24px;
+    font-size: 1.5em;
   }
   #home-h4{
-    font-size: 16px;
+    font-size: 1em;
   }
   /* Footer */
   #footer-txt{
-    font-size: x-small;
+    font-size: .6em;
   }
   /* Profile Header */
+  #profile-head{
+    padding-bottom: 0px;
+  }
   #profile-page-header{
-    font-size: 16px;
+    font-size: 1em;
+    font-weight: bold;
   }
   /* Overview */
+  .profile-page-header{
+    margin-bottom: 70px;
+  }
   #about-me{
-    font-size: 9px;
+    font-size: .7em;
+    font-weight: bold;
   }
   #about-me-par1,
   #about-me-par2{
-    font-size: 8px;
+    font-size: .6em;
+    font-weight: 600;
+    padding: 0 20px;
   }
   #education{
-    font-size: 9px;
+    font-size: .7em;
+    font-weight: bold;
+    padding-top: 0px;
   }
   #highSchool, 
   #college{
-    font-size: 7px;
+    font-size: .6em;
+    font-weight: 600;
   }
   /* Personal */
   #profile-img{
-    width: 60%;
+    width: 50%;
+    padding-bottom: 0px;
   }
   #name, 
   #roles,
   #location{
-    font-size: 7px;
+    font-size: .6em;
+    font-weight: 600;
+  }
+  #location{
+    padding-bottom: 0px;
   }
   /* Profile Buttons */
   #link-btns{
     display: flex;
     align-items: center;
     /* height: 20px; */
-    font-size: 5px;
+    font-size: .6em;
     padding: 0;
-    width: 50px; 
+    width: 55px; 
+  }
+  .icon-style{
+    height: 15px;
+    width: 15px;
+  }
+  #profile-part1{
+    padding-bottom: 0px;
+  }
+  #profile-content{
+    display: flex;
+    flex-direction: column;
+  }
+  #link{
+    font-size: .7em;
+    font-weight: bold;
+  }
+  nav{
+    width: 18vw;
+    height: 35vh;
+    color: white;
+    border-radius: 12px;
+  }
+  #scroll-btn{
+    height: 30px;
+    width: 20px;
+  }
+  .scroll-up{
+    left: 20%;
+  }
+  /* Skills */
+  #skills-header{
+    font-size: 1em;
+    font-weight: bold;
+  }
+  #img-style{
+    width: 12% !important;
+    height: 12% !important;
+  }
+  #img-row{
+    padding-top: 0px;
+  }
+  #xp-header{
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .head1{
+    font-size: .9em;
+    font-weight: 600;
+  }
+  .head2{
+    font-size: .89em;
+    font-weight: 600;
+  }
+  .head3{
+    font-size: .85em;
+    font-weight: 600;
+  }
+  .head4{
+    font-size: .82em;
+    font-weight: 600;
+  }
+  #xp-cont{
+    padding-top: 0px;
+  }
+  /* Projects Page */
+  #projects-header{
+    font-size: 1em;
+    font-weight: bold;
+  }
+  #loading-img-style{
+    width: 130px;
+    height: 130px;
+  }
+  #projects-message{
+    font-size: .9em;
+    font-weight: 600;
+  }
+  #img-container{
+    padding-top: 50px;
+  }
+  /* Contact */
+  #contact-header{
+    font-size: 1em;
+    font-weight: bold;
+  }
+  #contact-img-style{
+    width: 22%;
+    height: 22%;
+    top: 50px;
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 360px){
+  /* Home */
+  #home-h1{
+    font-size: 1.5em;
+  }
+  #home-h4{
+    font-size: 1em;
+  }
+  /* Footer */
+  #footer-txt{
+    font-size: .8em;
+  }
+  /* Profile Header */
+  #profile-head{
+    padding-bottom: 0px;
+  }
+  #profile-page-header{
+    font-size: 1em;
+    font-weight: bold;
+  }
+  /* Overview */
+  .profile-page-header{
+    margin-bottom: 70px;
+  }
+  #about-me{
+    font-size: .65em;
+    font-weight: bold;
+  }
+  #about-me-par1,
+  #about-me-par2{
+    font-size: .56em;
+    font-weight: 600;
+    padding: 0 20px;
+  }
+  #education{
+    font-size: .65em;
+    font-weight: bold;
+    padding-top: 0px;
+  }
+  #highSchool, 
+  #college{
+    font-size: .56em;
+    font-weight: 600;
+  }
+  /* Personal */
+  #profile-img{
+    width: 50%;
+    padding-bottom: 0px;
+  }
+  #name, 
+  #roles,
+  #location{
+    font-size: .56em;
+    font-weight: 600;
+  }
+  #location{
+    padding-bottom: 0px;
+  }
+  /* Profile Buttons */
+  #link-btns{
+    display: flex;
+    align-items: center;
+    /* height: 20px; */
+    font-size: .6em;
+    padding: 0;
+    width: 55px; 
+  }
+  .icon-style{
+    height: 15px;
+    width: 15px;
+  }
+  #profile-part1{
+    padding-bottom: 0px;
+  }
+  #profile-content{
+    display: flex;
+    flex-direction: column;
+  }
+  #link{
+    font-size: .6em;
+    font-weight: bold;
+  }
+  nav{
+    width: 18vw;
+    height: 35vh;
+    color: white;
+    border-radius: 12px;
+  }
+  #scroll-btn{
+    height: 30px;
+    width: 20px;
+  }
+  .scroll-up{
+    left: 20%;
+  }
+  /* Skills */
+  #skills-header{
+    font-size: 1em;
+    font-weight: bold;
+  }
+  #img-style{
+    width: 12% !important;
+    height: 12% !important;
+  }
+  #img-row{
+    padding-top: 0px;
+  }
+  #xp-header{
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .head1{
+    font-size: .9em;
+    font-weight: 600;
+  }
+  .head2{
+    font-size: .89em;
+    font-weight: 600;
+  }
+  .head3{
+    font-size: .85em;
+    font-weight: 600;
+  }
+  .head4{
+    font-size: .82em;
+    font-weight: 600;
+  }
+  #xp-cont{
+    padding-top: 0px;
+  }
+  /* Projects Page */
+  #projects-header{
+    font-size: 1em;
+    font-weight: bold;
+  }
+  #loading-img-style{
+    width: 130px;
+    height: 130px;
+  }
+  #projects-message{
+    font-size: .9em;
+    font-weight: 600;
+  }
+  #img-container{
+    padding-top: 50px;
+  }
+  /* Contact */
+  #contact-header{
+    font-size: 1em;
+    font-weight: bold;
+  }
+  #contact-img-style{
+    width: 20%;
+    height: 20%;
+    top: 50px;
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  /* Home */
+  #home-h1{
+    font-size: 1.3em;
+  }
+  #home-h4{
+    font-size: 1em;
+  }
+  /* Footer */
+  #footer-txt{
+    font-size: .6em;
+  }
+  /* Profile Header */
+  #profile-head{
+    padding-bottom: 0px;
+  }
+  #profile-page-header{
+    font-size: .8em;
+    font-weight: bold;
+  }
+  /* Overview */
+  .profile-page-header{
+    margin-bottom: 70px;
+  }
+  #about-me{
+    font-size: .6em;
+    font-weight: bold;
+  }
+  #about-me-par1,
+  #about-me-par2{
+    font-size: .5em;
+    font-weight: 600;
+    padding: 0 20px;
+  }
+  #education{
+    font-size: .6em;
+    font-weight: bold;
+    padding-top: 0px;
+  }
+  #highSchool, 
+  #college{
+    font-size: .5em;
+    font-weight: 600;
+  }
+  /* Personal */
+  #profile-img{
+    width: 50%;
+    padding-bottom: 0px;
+  }
+  #name, 
+  #roles,
+  #location{
+    font-size: .5em;
+    font-weight: 600;
+  }
+  #location{
+    padding-bottom: 0px;
+  }
+  /* Profile Buttons */
+  #link-btns{
+    display: flex;
+    align-items: center;
+    /* height: 20px; */
+    font-size: .6em;
+    padding: 0;
+    width: 45px; 
   }
   .icon-style{
     height: 10px;
     width: 10px;
   }
+  #profile-part1{
+    padding-bottom: 0px;
+  }
   #profile-content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   #link{
-    font-size: 8px;
+    font-size: .6em;
+    font-weight: bold;
   }
   nav{
-    top: 12%;
-    width: 14vw;
-    height: 70vh;
+    width: 18vw;
+    height: 40vh;
     color: white;
-    border-radius: 10px;
+    border-radius: 12px;
   }
   #scroll-btn{
     height: 30px;
-    width: 15px;
-    display: none;
-    visibility: hidden;
+    width: 20px;
   }
   .scroll-up{
-    /* bottom: ; */
-    left: 40%;
+    left: 20%;
   }
   /* Skills */
   #skills-header{
-    font-size: 16px;
+    font-size: .8em;
+    font-weight: bold;
+  }
+  #img-style{
+    width: 10% !important;
+    height: 10% !important;
+    top: 40px;
+  }
+  #img-row{
+    padding-top: 0px;
   }
   #xp-header{
-    font-size: 16px;
-  }
-  #xp-cont{
-    padding: 0;
-    margin: 0;
+    font-size: .8em;
+    font-weight: bold;
   }
   .head1{
-    font-size: 11px;
+    font-size: .8em;
+    font-weight: 600;
   }
   .head2{
-    font-size: 11px;
+    font-size: .79em;
+    font-weight: 600;
   }
   .head3{
-    font-size: 9px;
+    font-size: .76em;
+    font-weight: 600;
   }
   .head4{
-    font-size: 8px;
+    font-size: .75em;
+    font-weight: 600;
+  }
+  #xp-cont{
+    padding-top: 0px;
   }
   /* Projects Page */
   #projects-header{
-    font-size: 20px;
+    font-size: .8em;
+    font-weight: bold;
+  }
+  #loading-img-style{
+    width: 130px;
+    height: 130px;
   }
   #projects-message{
-    font-size: 15px;
+    font-size: .8em;
+    font-weight: 600;
+  }
+  #img-container{
+    padding-top: 0px;
   }
   /* Contact */
   #contact-header{
-    font-size: 20px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  #contact-img-style{
+    width: 17%;
+    height: 17%;
+    top: 50px;
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 280px){
+  /* Home */
+  #home-h1{
+    font-size: 1.3em;
+  }
+  #home-h4{
+    font-size: 1em;
+  }
+  /* Footer */
+  #footer-txt{
+    font-size: .6em;
+  }
+  /* Profile Header */
+  #profile-head{
+    padding-bottom: 0px;
+  }
+  #profile-page-header{
+    font-size: .8em;
+    font-weight: bold;
+  }
+  /* Overview */
+  .profile-page-header{
+    margin-bottom: 70px;
+  }
+  #about-me{
+    font-size: .6em;
+    font-weight: bold;
+  }
+  #about-me-par1,
+  #about-me-par2{
+    font-size: .5em;
+    font-weight: 600;
+    padding: 0 20px;
+  }
+  #education{
+    font-size: .6em;
+    font-weight: bold;
+    padding-top: 0px;
+  }
+  #highSchool, 
+  #college{
+    font-size: .5em;
+    font-weight: 600;
+  }
+  /* Personal */
+  #profile-img{
+    width: 50%;
+    padding-bottom: 0px;
+  }
+  #name, 
+  #roles,
+  #location{
+    font-size: .5em;
+    font-weight: 600;
+  }
+  #location{
+    padding-bottom: 0px;
+  }
+  /* Profile Buttons */
+  #link-btns{
+    display: flex;
+    align-items: center;
+    /* height: 20px; */
+    font-size: .5em;
+    padding: 0;
+    width: 44px; 
+  }
+  .icon-style{
+    height: 10px;
+    width: 10px;
+  }
+  #profile-part1{
+    padding-bottom: 0px;
+  }
+  #profile-content{
+    display: flex;
+    flex-direction: column;
+  }
+  #link{
+    font-size: .5em;
+    font-weight: bold;
+  }
+  nav{
+    width: 19vw;
+    height: 40vh;
+    color: white;
+    border-radius: 12px;
+  }
+  #scroll-btn{
+    height: 30px;
+    width: 20px;
+  }
+  .scroll-up{
+    left: 20%;
+  }
+  /* Skills */
+  #skills-header{
+    font-size: .8em;
+    font-weight: bold;
+  }
+  #img-style{
+    width: 18% !important;
+    height: 18% !important;
+    top: 0px;
+  }
+  #img-row{
+    padding-top: 0px;
+  }
+  #xp-header{
+    font-size: .8em;
+    font-weight: bold;
+  }
+  .head1{
+    font-size: .8em;
+    font-weight: 600;
+  }
+  .head2{
+    font-size: .79em;
+    font-weight: 600;
+  }
+  .head3{
+    font-size: .76em;
+    font-weight: 600;
+  }
+  .head4{
+    font-size: .75em;
+    font-weight: 600;
+  }
+  #xp-cont{
+    padding-top: 0px;
+  }
+  /* Projects Page */
+  #projects-header{
+    font-size: .8em;
+    font-weight: bold;
+  }
+  #loading-img-style{
+    width: 130px;
+    height: 130px;
+  }
+  #projects-message{
+    font-size: .8em;
+    font-weight: 600;
+  }
+  #img-container{
+    padding-top: 0px;
+  }
+  /* Contact */
+  #contact-header{
+    font-size: 1em;
+    font-weight: bold;
+  }
+  #contact-img-style{
+    width: 17%;
+    height: 17%;
+    top: 50px;
+    padding-top: 0px;
   }
 }
 
 html, body, #app, #app>div {
-  height: 100vh
+  height: 100vh;
+}
+
+html{
+  background: #1A1A1D;
 }

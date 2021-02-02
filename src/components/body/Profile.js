@@ -47,12 +47,12 @@ function Profile() {
 
     return (
         <StyledHome onHover={onHover} onLeave={onLeave}>
-            <div className="mt-3 mb-2">
+            <div id="profile-head" className="mt-3 mb-2">
             <h1 id="profile-page-header" className="hvr-float-shadow" style={{fontWeight: "800",}}>Profile</h1>
             </div>
-            <div id='profile-content' className='row ml-1 mr-1 d-flex align-items-center'>
+            <div id='profile-content' className='row ml-1 mr-1 d-flex align-items-center wrapper'>
                 {/* Profile personal */}
-                <div id='profile-part1' className="col">
+                <div id='profile-part1' className="col main">
                     <div id='personal-contained' className="container">
                         <div className="row">
                             <img id='profile-img' style={imageStyle} className="hvr-grow-shadow" src={Photo} alt="profile-img"/>
@@ -86,7 +86,7 @@ function Profile() {
                 </div>
         
                 {/* Profile details */}
-                <div id='profile-part2' className="col mt-2 d-flex align-items-center flex-column d-flex">
+                <div id='profile-part2' className="col mt-2 d-flex align-items-center flex-column d-flex aside">
                     <div>
                         <h3 id="about-me" className='mb-1 hvr-float-shadow' style={{fontWeight: "700",}}>About Me</h3>
                     </div>

@@ -7,7 +7,7 @@ function Navbar(props){
     return(
         <nav className='navbar d-flex justify-content-center'>
             <div className='nav-box'>
-                <div className='row mt-4 hvr-float-shadow'>
+                <div className='row hvr-float-shadow'>
                     <NavLink id='link' className='link' to='/profile' activeClassName='active'><p className='blocktext'>Profile</p></NavLink>
                 </div>
                 <div className='row mt-4 mt-2 hvr-float-shadow'>

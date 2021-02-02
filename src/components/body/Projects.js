@@ -21,14 +21,14 @@ function Projects() {
   return (
     <Styled>
         <h1 id='projects-header' className="hvr-float-shadow mt-3 mb-2" style={{fontWeight: "800", }}>Projects</h1>
-        {/* <div className='pt5'> */}
-          <div style={divStyle} className="mt-4 mb-5">
-            <div className="row">
-              <img style={style} className="loading mt-5" src={loading} alt="loading" />
-            </div>
+        
+        <div id="img-container" style={divStyle} className="mt-4 mb-5">
+          <div className="row">
+            <img id="loading-img-style" className="loading mt-5" src={loading} alt="loading" />
           </div>
+        </div>
         <h3 id='projects-message' className="hvr-buzz mt-2 pt-5">...Coming Soon...</h3>
-        {/* </div> */}
+        
     </Styled>
   );
 }

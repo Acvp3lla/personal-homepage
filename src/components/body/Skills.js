@@ -32,47 +32,47 @@ function Skills() {
         <h1 id='skills-header' className="hvr-float-shadow mt-3 mb-2" style={{fontWeight: "800",}}> Skills </h1>
 
         <div className="cotainer d-flex justify-content-center flex-row flex-wrap">
-          <div className="col">
-            <div className="row mt-4 d-flex justify-content-around">
+          <div id="img-container" className="col">
+            <div id="img-row" className="row mt-4 d-flex justify-content-around">
               <Tooltip title="JavaScript">
-                <img className="hvr-buzz" style={style} src={javascript} alt="javascript"/>
+                <img id="img-style" className="hvr-buzz" src={javascript} alt="javascript"/>
               </Tooltip>
               <Tooltip title="Python">
-                <img className="hvr-buzz" style={style} src={python} alt="python" />
+                <img id="img-style" className="hvr-buzz" src={python} alt="python" />
               </Tooltip>
               <Tooltip title="HTML">
-                <img className="hvr-buzz" style={style} src={html} alt="html" />
+                <img id="img-style" className="hvr-buzz" src={html} alt="html" />
               </Tooltip>
               <Tooltip title="CSS">
-                <img className="hvr-buzz" style={style} src={css} alt="css" />
+                <img id="img-style" className="hvr-buzz" src={css} alt="css" />
               </Tooltip>
             </div>
-            <div className="row mt-4 d-flex justify-content-around">
+            <div id="img-row" className="row mt-4 d-flex justify-content-around">
               <Tooltip title="Dart">
-                <img className="hvr-buzz" style={style} src={dart} alt="dart"/>
+                <img id="img-style" className="hvr-buzz" src={dart} alt="dart"/>
               </Tooltip>
               <Tooltip title="React">
-                <img className="hvr-buzz" style={style} src={react} alt="react"/>
+                <img id="img-style" className="hvr-buzz" src={react} alt="react"/>
               </Tooltip>
               <Tooltip title="Angular">
-                <img className="hvr-buzz" style={style} src={angular} alt="angular"/>
+                <img id="img-style" className="hvr-buzz" src={angular} alt="angular"/>
               </Tooltip>
               <Tooltip title="Flutter">
-                <img className="hvr-buzz" style={style} src={flutter} alt="flutter"/>
+                <img id="img-style" className="hvr-buzz" src={flutter} alt="flutter"/>
               </Tooltip>
             </div>
-            <div className="row mt-4 d-flex justify-content-around">
+            <div id="img-row" className="row mt-4 d-flex justify-content-around">
               <Tooltip title="NodeJs">
-                <img className="hvr-buzz" style={style} src={node} alt="node"/>
+                <img id="img-style" className="hvr-buzz" src={node} alt="node"/>
               </Tooltip>
               <Tooltip title="SQL">
-                <img className="hvr-buzz" style={style} src={sql} alt="sql" />
+                <img id="img-style" className="hvr-buzz" src={sql} alt="sql" />
               </Tooltip>
               <Tooltip title="Photoshop">
-                <img className="hvr-buzz" style={style} src={photoshop} alt="photoshop"/>
+                <img id="img-style" className="hvr-buzz" src={photoshop} alt="photoshop"/>
               </Tooltip>
               <Tooltip title="AdobeXD">
-                <img className="hvr-buzz" style={style} src={adobeXD} alt="adobeXD" />
+                <img id="img-style" className="hvr-buzz" src={adobeXD} alt="adobeXD" />
               </Tooltip>
             </div>
           </div>
