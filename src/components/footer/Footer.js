@@ -2,8 +2,7 @@ import React from 'react'
 import './Footer.css'
 
 function Footer(){
-    var year = new Date().getFullYear()
-    console.log(year)
+    var year = new Date().getFullYear();
     
     return(
         <footer className='footer p-2'>
