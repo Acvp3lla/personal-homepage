@@ -5,8 +5,10 @@
 		"role2": "UI/UX Designer",
 		"location": "Kingston, Jamaica",
 		"overview": {
-			"p1": "I am an Alumnus of the University of the West Indies. Presently, I am a Junior Software Developer at Speur Professional Services. I am a naturally curious person, a driven individual and a proactive problem solver.",
-			"p2": "According to the great Albert Einstein,\"Life is like riding a bicycle. To keep your balance, you must keep moving\". As such, my ultimate goal is to continue working on my skills and never stop learning."
+			
+			"p1": "I am an alumnus of the University of the West Indies and a Junior Developer at Speur Professional Services. I am a naturally curious person, a driven individual and a proactive problem solver.",
+			"p2": "I specialize in the role of Frontend Development with an extensive experience in Backend Development using NodeJs. I hope to transition into the role of a Fullstack Developer once I gain more knowledge and experience through my work and personal projects.",
+			"p3": "According to the great Albert Einstein,\"Life is like riding a bicycle. To keep your balance, you must keep moving\". As such, my ultimate goal is to continue working on my skills and never stop learning."
 		}
 	},
 	"contact":{
