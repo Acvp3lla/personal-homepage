@@ -20,7 +20,6 @@ function Skills() {
     <Styled>
       <div>
         <h1 id='skills-header' className="hvr-float-shadow mt-3 mb-2" style={{fontWeight: "800",}}> Skills </h1>
-
         <div className="cotainer d-flex justify-content-center flex-row flex-wrap">
           <div id="img-container" className="col">
             <div id="img-row" className="row mt-4 d-flex justify-content-around">
