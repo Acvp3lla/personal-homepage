@@ -21,7 +21,7 @@ function App(props) {
   return (
     <div id="app" className="App">
       <Home>
-      <ScrollToBottom/>
+        <ScrollToBottom/>
       </Home>
         <div id='down' className="container-fluid bg-main">
           <div id="main-content" className="row">

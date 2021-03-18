@@ -105,7 +105,7 @@ function Home(props){
 	    }
         }}/>
             <div className="container d-flex justify-content-center align-items-center">
-                <div className="row">
+                <div className="row d-flex justify-content-center align-items-center">
                     <StyledHome>
                         <img className="hvr-buzz" style={style} src={logo} alt="javascript"/>
                         <h1 id="home-h1" className="hvr-float-shadow" style={{fontWeight: "800",}}>{data.profile.name}</h1>
