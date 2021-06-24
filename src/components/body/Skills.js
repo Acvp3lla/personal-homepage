@@ -11,7 +11,7 @@ import adobeXD from "./icons/black/adobe-xd.png";
 import angular from "./icons/black/angular.png";
 import python from "./icons/black/python.png";
 import dart from "./icons/black/dart.png";
-import flutter from "./icons/black/flutter.png";
+import spring from "./icons/black/spring.png";
 import node from './icons/black/nodejs.png';
 import Tooltip from '@material-ui/core/Tooltip';
 
@@ -46,8 +46,8 @@ function Skills() {
               <Tooltip title="Angular">
                 <img id="img-style" className="hvr-buzz" src={angular} alt="angular"/>
               </Tooltip>
-              <Tooltip title="Flutter">
-                <img id="img-style" className="hvr-buzz" src={flutter} alt="flutter"/>
+              <Tooltip title="spring">
+                <img id="img-style" className="hvr-buzz" src={spring} alt="spring"/>
               </Tooltip>
             </div>
             <div id="img-row" className="row mt-4 d-flex justify-content-around">

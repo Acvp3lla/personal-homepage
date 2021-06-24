@@ -109,7 +109,7 @@ function Home(props){
                     <StyledHome>
                         <img className="hvr-buzz" style={style} src={logo} alt="javascript"/>
                         <h1 id="home-h1" className="hvr-float-shadow" style={{fontWeight: "800",}}>{data.profile.name}</h1>
-                        <h4 id="home-h4" className="hvr-buzz" style={{fontWeight: "500",}}>Interactive Resume</h4>
+                        <h4 id="home-h4" className="hvr-buzz" style={{fontWeight: "500",}}>Software Developer</h4>
                     </StyledHome>
                 </div>
                 <div className="row d-flex justify-content-center">
