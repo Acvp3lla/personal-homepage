@@ -11,7 +11,7 @@
     "animate.css": "^4.1.0",
     "bootstrap": "^4.5.3",
     "hover.css": "^2.3.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "particles-bg": "^2.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
